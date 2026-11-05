@@ -5,6 +5,9 @@ on:
     - cron: 0 1 * * * #pull new ngnix version
   push:
     branches: [master]
+    paths-ignore:
+      - 'docs/**'
+      - '**/*.md'
   workflow_dispatch:
 
 env:
